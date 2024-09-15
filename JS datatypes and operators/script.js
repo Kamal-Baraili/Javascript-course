@@ -6,10 +6,13 @@ let num1 = 5;
 
 let num2 = 1.5;
 
+let num3 = 10;
+
 console.log(num1 + num2);
 console.log(num1 - num2);
 console.log(num1 * num2);
 console.log(num1 / num2);
+console.log(num3 % num1); //modular division gives you remainder of the division
 
 //Strings
 
