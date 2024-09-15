@@ -29,8 +29,31 @@ const x = 25;
 
 console.log(x)
 
-//Variables practice
+//Variables practice with their data types
+
+//strings
 let a = "Kamal";
 let b = "Baraili";
 
 console.log(a + ' ' + b);
+
+//boolean
+let con = true;
+console.log(con);
+
+//object
+const employee = {
+    Name: 'Kamal Baraili',
+    Age: 25,
+    Gender:'M',
+}
+
+console.log(employee.Gender)
+
+//undefined
+var und;
+console.log(und);
+
+//null
+let n = null;
+console.log(n);
