@@ -46,6 +46,32 @@ console.log(person);
 console.log(person.firstName + " " + person.lastName); //single property could be accessed by using dot (.)
 
 
+let a = "Kamal";
+let b = "Baraili";
+
+console.log(a + ' ' + b);
+
+//boolean
+let con = true;
+console.log(con);
+
+//object
+const employee = {
+    Name: 'Kamal Baraili',
+    Age: 25,
+    Gender:'M',
+}
+
+console.log(employee.Gender)
+
+//undefined
+var un;
+console.log(un);
+
+//null
+let n = null;
+console.log(n);
+
 
 //Bonus
 
