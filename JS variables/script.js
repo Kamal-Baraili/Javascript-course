@@ -28,3 +28,9 @@ if (true) {
 const x = 25;
 
 console.log(x)
+
+//Variables practice
+let a = "Kamal";
+let b = "Baraili";
+
+console.log(a + ' ' + b);
