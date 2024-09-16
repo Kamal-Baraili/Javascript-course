@@ -49,3 +49,23 @@ function addNumbersV2(...numbers) {
 
 let sum = addNumbers(5, 6);
 console.log(sum);
+
+
+//Example: 1
+
+function square(a) {
+     return a * a;
+} 
+
+console.log(square(5));
+
+//Example: 2
+
+message = function() {
+    console.log("Never give up!");
+}
+
+message();
+
+//Example: 3
+
