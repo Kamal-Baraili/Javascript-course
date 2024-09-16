@@ -25,3 +25,24 @@ do {
     ip2 = ip2 + 1;
 } while(ip2 <= house2)
 
+//Example 1: Print even numbers from 1 to 20
+
+//using for loop
+for (let i = 2; i <= 20; i += 2) {
+  console.log(i);
+}
+
+//using while loop
+var i = 2;
+while (i <= 20) {
+    console.log(i);
+    i += 2;
+}
+
+//using Do while loop
+var i = 2;
+do{
+    console.log(i);
+    i += 2;
+} while(i <= 20)
+
