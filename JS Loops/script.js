@@ -114,3 +114,19 @@ for (let i = 1; i <= 5; i++) {
     count--;
     console.log('\n');
 }
+
+//Example 5: Pattern
+console.log("Pattern 3");
+var count = 5;
+pattern = '';
+
+for (let i = 1; i <= count; i++) {
+    for (let j = 1; j <= i; j++){
+        pattern += i;
+    }
+    console.log(pattern);
+    pattern = '';
+    console.log('\n');
+}
+
+
