@@ -84,8 +84,9 @@ do{
 console.log(factorial);
 
 //Example 3: Pattern
-const char = '*';
-const count = 5;
+console.log("Pattern 1");
+var char = '*';
+var count = 5;
 pattern = '';
 
 for (let i = 1; i <= count; i++) {
@@ -97,3 +98,19 @@ for (let i = 1; i <= count; i++) {
     console.log('\n');
 }
 
+//Example 4: Pattern
+
+console.log("Pattern 2");
+var char = '*';
+var count = 5;
+pattern = '';
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= count; j++){
+        pattern += char;
+    }
+    console.log(pattern);
+    pattern = '';
+    count--;
+    console.log('\n');
+}
