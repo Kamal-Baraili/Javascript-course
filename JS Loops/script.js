@@ -129,4 +129,17 @@ for (let i = 1; i <= count; i++) {
     console.log('\n');
 }
 
+//Example 6: Pattern
+console.log("Pattern 4");
+var count = 5;
+pattern = '';
+
+for (let i = 1; i <= count; i++) {
+    for (let j = 1; j <= i; j++){
+        pattern += j;
+    }
+    console.log(pattern);
+    pattern = '';
+    console.log('\n');
+}
 
