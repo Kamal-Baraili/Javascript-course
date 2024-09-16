@@ -46,3 +46,39 @@ do{
     i += 2;
 } while(i <= 20)
 
+    
+//Example 2: Factorial
+
+//using for loop
+var number = 5;
+var factorial = 1;
+
+for (let i = 1; i <= number; i++) {
+  factorial *= i;
+}
+
+console.log(factorial);
+
+//using while loop
+var number = 5;
+var factorial = 1;
+var i = 1;
+
+while(i <= number) {
+    factorial *= i;
+    i++;
+}
+
+console.log(factorial);
+
+//using do while loop
+var number = 5;
+var factorial = 1;
+var i = 1;
+
+do{
+    factorial *= i;
+    i++;
+} while ((i <= number))
+
+console.log(factorial);
