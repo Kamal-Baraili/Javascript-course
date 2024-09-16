@@ -82,3 +82,18 @@ do{
 } while ((i <= number))
 
 console.log(factorial);
+
+//Example 3: Pattern
+const char = '*';
+const count = 5;
+pattern = '';
+
+for (let i = 1; i <= count; i++) {
+    for (let j = 1; j <= i; j++){
+        pattern += char;
+    }
+    console.log(pattern);
+    pattern = '';
+    console.log('\n');
+}
+
