@@ -77,3 +77,10 @@ function factorial(n) {
 }
 console.log(factorial(3)); 
 
+//Example: 4 Function hoisting example
+console.log(hoistedFunction()); 
+
+function hoistedFunction() {
+  return 'Hello, world!';
+}
+
