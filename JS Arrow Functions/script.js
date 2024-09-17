@@ -54,3 +54,17 @@ factorial= (n) => {
   }
 }
 console.log(factorial(5)); 
+
+//Example 3:
+makeCounter = () => {
+  let count = 0;
+  return () => {
+        count += 1;
+        return count;
+    } 
+}
+
+let counter = makeCounter();
+console.log(counter()); 
+console.log(counter()); 
+console.log(counter()); 
