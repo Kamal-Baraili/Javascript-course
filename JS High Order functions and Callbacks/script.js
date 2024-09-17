@@ -21,3 +21,12 @@ function add(a, b) {
 let myfunction = add(2,5);
 
 myfunction();
+
+//Example 1:
+const applyOperation = (a, b, operation) => operation(a, b);
+
+const sum = (x, y) => x + y;
+const multiply = (x, y) => x * y;
+
+console.log(applyOperation(5, 3, sum));
+console.log(applyOperation(5, 3, multiply));
