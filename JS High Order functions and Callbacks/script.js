@@ -30,3 +30,11 @@ const multiply = (x, y) => x * y;
 
 console.log(applyOperation(5, 3, sum));
 console.log(applyOperation(5, 3, multiply));
+
+//Example 2:
+const applyFunction = (func, args) => {
+  return func(...args);
+};
+
+const avg = (a, b) => (a + b)/2;
+console.log(applyFunction(avg, [5, 3]));
