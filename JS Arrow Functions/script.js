@@ -68,3 +68,12 @@ let counter = makeCounter();
 console.log(counter()); 
 console.log(counter()); 
 console.log(counter()); 
+
+//Example 4:
+showArguments = (...args) => {
+  for (let i = 0; i < args.length; i++) {
+    console.log(args[i]);
+  }
+}
+
+showArguments('first', 'second', 'third');
