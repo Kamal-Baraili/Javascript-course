@@ -67,5 +67,13 @@ message = function() {
 
 message();
 
-//Example: 3
+//Example: 3 // Recursive Function to Calculate Factorial
+function factorial(n) {
+  if (n === 0) {
+    return 1; 
+  } else {
+    return n * factorial(n - 1); 
+  }
+}
+console.log(factorial(3)); 
 
