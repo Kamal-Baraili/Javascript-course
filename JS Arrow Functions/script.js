@@ -39,3 +39,18 @@ const obj = {
 }
 
 obj.Myfunction();
+
+//Example 1:
+const square = x => x * x;
+
+console.log(square(5));
+
+//Example 2:
+factorial= (n) => {
+  if (n === 0) {
+    return 1; 
+  } else {
+    return n * factorial(n - 1); 
+  }
+}
+console.log(factorial(5)); 
