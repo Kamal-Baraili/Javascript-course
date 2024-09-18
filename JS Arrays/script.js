@@ -28,5 +28,11 @@ let vehicles = ['car', 'bike', 'truck'];
 vehicles.pop();
 console.log(vehicles);
 
+//Example 3:
+let names = ['Alice', 'Bob', 'Charlie'];
+for (let i = 0; i < names.length; i++) {
+    console.log("Hi" + names[i]);
+}
+
 
 
