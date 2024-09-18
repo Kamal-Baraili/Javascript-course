@@ -18,4 +18,15 @@ myArray.push({name: "Kamal"});
 console.log(myArray);
 console.log(myArray.indexOf("Hi"));
 
+//Example 1:
+let fruits = ['apple', 'banana', 'cherry'];
+console.log(fruits[0]); // Output: 'apple'
+console.log(fruits[1]);
+
+//Example 2:
+let vehicles = ['car', 'bike', 'truck'];
+vehicles.pop();
+console.log(vehicles);
+
+
 
