@@ -82,3 +82,5 @@ const allEven = customEvery(numbers, num => num % 2 === 0);
 
 console.log(allEven);
 
+
+
