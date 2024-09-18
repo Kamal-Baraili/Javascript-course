@@ -5,7 +5,7 @@ const students = ["John", "Mike", "Jane"]
 
 students.forEach(val => console.log(val)); //.forEach doesn't return anything
 
-// .map() ////takes call back function as an argument
+// .map() //takes call back function as an argument
 
 students.map(val => console.log(val)); // .map returns an array
 
@@ -37,6 +37,17 @@ let newArr3 = numbers.splice(1,4);
 console.log(newArr3);
 console.log(numbers); //the spliced elements are deleted from this array
 
+//.reduce
+let number = [1, 2, 3, 4];
+const sum = number.reduce((acc, num) => acc + num, 0);
+console.log(sum);
 
+//.some
+const hasEven = numbers.some(num => num % 2 === 0);
+console.log(hasEven);
+
+//.every
+const allEven = numbers.every(num => num % 2 === 0);
+console.log(allEven);
 
 
