@@ -67,3 +67,18 @@ console.log(add(5, 3));
 console.log(subtract(5, 3));
 console.log(divide(9,3));
 
+//Example 4: 
+function customEvery(arr, callback) {
+    for (let i = 0; i < arr.length; i++) {
+        if (!callback(arr[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+
+const numbers = [2, 4, 8];
+const allEven = customEvery(numbers, num => num % 2 === 0);
+
+console.log(allEven);
+
