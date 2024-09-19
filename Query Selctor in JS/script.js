@@ -41,3 +41,9 @@
       for( let i=0 ; i < rmv.length ; i++){
         rmv[i].remove('rmv');
       }
+
+
+//Example 1:
+const p = document.querySelector("p");
+console.log(p.innerHTML);
+p.innerHTML = "This code is Hacked!"
