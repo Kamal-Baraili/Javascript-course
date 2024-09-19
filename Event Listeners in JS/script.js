@@ -21,6 +21,18 @@
 
 //Example 1:
 const bn = document.getElementById("button");
-      bn.addEventListener("click", () => {
-       bn.style.backgroundColor = "blue";
-      });
+bn.addEventListener("click", () => {
+bn.style.backgroundColor = "blue";
+});
+
+//Example 2:
+const body = document.querySelector("body")
+nameblck.addEventListener("click", () => {
+    nameblck.style.width = "18%"
+    nameblck.style.backgroundColor = "skyblue";
+});
+
+body.addEventListener("click", () => {
+    body.style.color = "green"
+})
+
