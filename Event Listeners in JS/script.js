@@ -32,7 +32,10 @@ nameblck.addEventListener("click", () => {
     nameblck.style.backgroundColor = "skyblue";
 });
 
-body.addEventListener("click", () => {
-    body.style.color = "green"
-})
+//Example 3:
+el.addEventListener("click", () => {
+        if (body.style.color === "orange") {
+          body.style.color = "red";
+        } else body.style.color = "orange";
+      });
 
