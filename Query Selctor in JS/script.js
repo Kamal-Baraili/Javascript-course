@@ -32,7 +32,7 @@
       console.log(el); 
       
       //select Element by class
-      const elements = document.getElementsByClassName("block"); //returns elements not a single elment
+      const elements = document.getElementsByClassName("block"); //returns elements not a single element
       for(let i = 0; i < elements.length; i++) {
         elements.item(i).style.background = "blue";
       }
@@ -47,3 +47,8 @@
 const p = document.querySelector("p");
 console.log(p.innerHTML);
 p.innerHTML = "This code is Hacked!"
+
+//Example 2:
+let appear = document.getElementById("container")
+appear.style.color = "white"
+appear.style.fontSize = "2rem"
