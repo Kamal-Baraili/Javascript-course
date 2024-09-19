@@ -47,8 +47,14 @@
 const p = document.querySelector("p");
 console.log(p.innerHTML);
 p.innerHTML = "This code is Hacked!"
+p.style.textDecoration = "gray underline"
 
 //Example 2:
 let appear = document.getElementById("container")
 appear.style.color = "white"
 appear.style.fontSize = "2rem"
+
+//Example 3:
+let nav = document.querySelector('nav');
+nav.classList.add("flex");
+console.log(body.innerHTML)
