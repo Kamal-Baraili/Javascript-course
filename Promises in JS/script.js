@@ -27,10 +27,15 @@ let b = 20;
 let result = a + b;
 
 async function getData() { 
+    try {
     let resultFromServer = await fetch (
         "https://jsonplaceholder.typicode.com/posts"
     );
     console.log(await resultFromServer.json());
+    }
+    catch (error) {
+        console.error(error);
+    }
 }
 
 getData();
