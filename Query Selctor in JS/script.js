@@ -18,6 +18,8 @@
 
       //querySelectorAll - Selects all element
       const paragraph = document.querySelectorAll(".paragraph");
+      console.log(paragraph);
+
       paragraph.forEach((p) => {
         console.log(p.innerText);
       });
@@ -36,6 +38,9 @@
       for(let i = 0; i < elements.length; i++) {
         elements.item(i).style.background = "blue";
       }
+
+      const para = document.getElementsByClassName("paragraph")[1];
+      console.log(para);
 
       const rmv = document.getElementsByClassName('rmv');
       for( let i=0 ; i < rmv.length ; i++){
