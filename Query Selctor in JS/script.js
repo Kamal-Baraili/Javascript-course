@@ -36,11 +36,9 @@
       //select Element by class
       const elements = document.getElementsByClassName("block"); //returns elements not a single element
       for(let i = 0; i < elements.length; i++) {
-        elements.item(i).style.background = "blue";
+        elements[i].style.background = "blue";
       }
 
-      const para = document.getElementsByClassName("paragraph")[1];
-      console.log(para);
 
       const rmv = document.getElementsByClassName('rmv');
       for( let i=0 ; i < rmv.length ; i++){
@@ -63,3 +61,11 @@ appear.style.fontSize = "2rem"
 let nav = document.querySelector('nav');
 nav.classList.add("flex");
 console.log(body.innerHTML)
+
+
+ const para = document.getElementsByClassName("paragraph");
+      console.log(para);
+       for(let i = 0; i < para.length; i++) {
+        para[i].innerHTML = "The paragraph has been changed";
+        console.log(para[i]);
+      } 
