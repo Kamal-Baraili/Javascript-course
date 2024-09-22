@@ -21,6 +21,57 @@ const lastName = "Baraili";
 
 console.log(firstName + " " + lastName);
 
+console.log(`Hi my name is ${firstName} ${lastName}`);
+console.log(firstName[3]);
+console.log(firstName.length)
+
+let fullName = new String('Kamal Baraili');
+
+//Methods in strings
+  //.length
+  console.log(fullName.length);
+
+  //.concat
+  let Name = firstName.concat(lastName);
+  console.log(Name);
+
+  //.toUpperCase() and .toLowerCase()
+  console.log(firstName.toUpperCase());
+  console.log(firstName.toLowerCase());
+
+  //.charAt()
+  console.log(firstName.charAt(3));
+
+  //.indexOf()
+  console.log(firstName.indexOf('l'))
+
+  //.subString()
+  console.log(firstName.substring(0, 4));
+
+  //.slice()
+  console.log(firstName.slice(-4, 4));
+
+  //.trim()
+  const newString = "    Kamal     ";
+  console.log(newString);
+  console.log(newString.trim());
+
+  //.replace()
+  const url = "https://Kamal.com/Kamal%20Baraili";
+  console.log(url.replace('%20', '-'));
+
+  //.includes()
+  console.log(url.includes('Kamal')); //true
+  console.log(url.includes('Baraili')); //true
+  console.log(url.includes('baraili')); //false
+
+  //.split()
+  const gName = "Kamal-Baraili-Com";
+  console.log(gName.split('-'));
+  
+  //.search()
+  console.log(gName.search('Baraili'));
+
 //Booleans
 
 let isLoggedIn = true;
