@@ -47,7 +47,7 @@ function addNumbersV2(...numbers) {
     return ans;
 }
 
-let sum = addNumbers(5, 6);
+let sum = addNumbersV2(5, 6);
 console.log(sum);
 
 
