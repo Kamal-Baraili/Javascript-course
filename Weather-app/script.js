@@ -15,6 +15,7 @@ async function getData(city_location) {
 }
 
 search_button.addEventListener("click", async () => {
+   try{
     const val = input.value;
     const result = await getData(val);
     city_location.innerText = `${result.location.name}, ${result.location.country}`;
@@ -22,4 +23,10 @@ search_button.addEventListener("click", async () => {
     temperature.innerText = `${result.current.temp_c} \u00B0 C`;
     condition.innerText = `${result.current.condition.text}`
     icon.setAttribute("src", `${result.current.condition.icon}`);
+   }
+
+   catch (error) {
+    alert("Location not found");
+   }
+   
 });
