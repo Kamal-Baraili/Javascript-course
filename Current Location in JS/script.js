@@ -9,11 +9,16 @@ async function getData(lat, long) {
 }
 
 async function gotLocation(position) {
+    try {
     const res = await getData(
         position.coords.latitude,
         position.coords.longitude
     )
     console.log(res);
+}
+catch (error) {
+    alert("Failed to fetch location");
+}
 }
 
 function failedToGet(){
