@@ -6,9 +6,15 @@ function add(a) {
     }
 }
 
+/* Using arrow function
+
+const add = a => b => c => a + b + c;
+
+*/
+
 console.log(add (2)(3)(5));
 
-//Example
+Example
 function sendAutoEmail(to) {
     return function(subject) {
         return function(body) {
@@ -16,6 +22,12 @@ function sendAutoEmail(to) {
         }
     }
 }
+
+/* Using arrow function
+
+const sendAutoEmail = (to) => (subject) => (body) => console.log(`Sending Email to ${to} with subject ${subject}: ${body}`);
+
+*/
 
 let step1 = sendAutoEmail('kamalbaraili86@gmail.com');
 let step2 = step1("New Order Confirmation");
