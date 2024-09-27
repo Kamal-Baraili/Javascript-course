@@ -49,3 +49,23 @@ const size52 = makeTextSizer(52);
 const size5 = makeTextSizer(5);
 
 btn.addEventListener("click", size12);
+
+
+//Make Counter
+
+function makeCounter() {
+    let count = 1;
+
+    function increment() {
+        console.log(count++);
+    }
+
+    return increment;
+}
+
+const counter1 = makeCounter();
+
+counter1();
+counter1();
+counter1();
+counter1();
