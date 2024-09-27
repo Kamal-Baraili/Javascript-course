@@ -28,3 +28,24 @@ addTo5(10);
 
 addTo10(2);
 addTo10(10);
+
+//Practical use case of closure
+const heading = document.getElementById("heading");
+const btn = document.getElementById("my-btn");
+
+function makeTextSizer(size) {
+    
+    function changeSize() {
+        heading.style.fontSize = `${size}px`;
+    }
+    
+    return changeSize;
+}
+
+
+const size12 = makeTextSizer(12);
+const size20 = makeTextSizer(20);
+const size52 = makeTextSizer(52);
+const size5 = makeTextSizer(5);
+
+btn.addEventListener("click", size12);
