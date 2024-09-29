@@ -44,3 +44,17 @@ const even = count();
 for (const v of even) {
     console.log(v);
 }
+
+//Another Example 
+
+function* makeMyIterator(start, end, stepSize = 1) {
+    for (let i = start; i <= end; i+=stepSize) {
+        yield i;
+    }
+}
+
+const one = makeMyIterator(1, 10, 2);
+
+for (const val of one) {
+    console.log(val);
+}
