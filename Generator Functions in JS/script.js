@@ -53,8 +53,12 @@ function* makeMyIterator(start, end, stepSize = 1) {
     }
 }
 
-const one = makeMyIterator(1, 10, 2);
+const btn = document.getElementById("my_btn");
+const likes = document.getElementById("likes");
+let one = makeMyIterator(1, 100, 1);
 
-for (const val of one) {
-    console.log(val);
-}
+likes.innerText = "0";
+
+btn.addEventListener("click", () => {
+    likes.innerText = one.next().value;
+})
