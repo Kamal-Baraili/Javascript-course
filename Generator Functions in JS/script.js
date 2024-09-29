@@ -28,3 +28,19 @@ while(!result.done) {
     result = myIterator.next();
 }
 
+//Generator function and yield keyword
+
+function* count() {
+    yield 2;
+    yield 4;
+    yield 6;
+    yield 8;
+    yield 10;
+    yield 12;
+}
+
+const even = count();
+
+for (const v of even) {
+    console.log(v);
+}
